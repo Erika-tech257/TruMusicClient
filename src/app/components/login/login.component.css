@@ -1,0 +1,23 @@
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 60px;
+}
+
+h3{
+    position: relative;
+    top: -10px;
+    color: #673AB7;
+    font-weight: 500;
+}
+
+h1{
+    color: #673AB7;
+}
+
+button{
+    position: relative;
+    top: 10px;
+}

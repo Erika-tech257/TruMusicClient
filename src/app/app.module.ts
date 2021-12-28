@@ -12,6 +12,7 @@ import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button'; 
 
 
 
@@ -31,7 +32,8 @@ import { MatSelectModule } from '@angular/material/select';
     HttpClientModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatButtonModule
  
     
   ],

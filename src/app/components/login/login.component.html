@@ -1,1 +1,26 @@
-
+<h1>TruMusic</h1>
+<form [formGroup] = "loginForm" (ngSubmit) = "userLogin" class="form-control">
+  <h3>Please Login</h3>
+<div class="username">
+  <mat-form-field appearance="legacy">
+    <mat-label>Username</mat-label>
+    <input matInput
+    formControlName="username"
+    type="text"
+    value=""
+    >
+  </mat-form-field>
+</div>
+<div class="password">
+  <mat-form-field appearance="legacy">
+    <mat-label>Password</mat-label>
+    <input matInput
+    formControlName="password"
+    type="text"
+    value=""
+    >
+  </mat-form-field>
+</div>
+<a href="">Don't have an account? Click here to register</a>
+<button mat-raised-button color="primary" type="button">Submit</button>
+</form>

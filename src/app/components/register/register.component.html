@@ -1,21 +1,35 @@
-
-<form >
+<h1>TruMusic</h1>
+<form [formGroup] = "registerForm" (ngSubmit) = "userRegister" class="form-control">
+  <h3>Please Register</h3>
 <div class = "email">
 <mat-form-field appearance="legacy">
-    <mat-label>Email</mat-label>
-    <input matInput required>
+    <mat-label class="visually-hidden">Email</mat-label>
+    <input matInput 
+    formControlName="email"
+    type="text"
+    value=""
+    >
   </mat-form-field>
 </div>
 <div class="username">
   <mat-form-field appearance="legacy">
     <mat-label>Username</mat-label>
-    <input matInput required>
+    <input matInput
+    formControlName="username"
+    type="text"
+    value=""
+    >
   </mat-form-field>
 </div>
 <div class="password">
   <mat-form-field appearance="legacy">
     <mat-label>Password</mat-label>
-    <input matInput required>
+    <input matInput
+    formControlName="password"
+    type="text"
+    value=""
+    >
   </mat-form-field>
 </div>
+<button mat-raised-button color="primary" type="button">Submit</button>
 </form>
