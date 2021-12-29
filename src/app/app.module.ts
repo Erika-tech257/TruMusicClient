@@ -13,6 +13,8 @@ import { MatInputModule} from '@angular/material/input'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button'; 
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
 import { AuthService } from './services/auth.service';
 
 
@@ -34,7 +36,9 @@ import { AuthService } from './services/auth.service';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule,
+    MatIconModule
  
     
   ],
