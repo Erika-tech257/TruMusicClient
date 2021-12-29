@@ -13,6 +13,7 @@ import { MatInputModule} from '@angular/material/input'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button'; 
+import { AuthService } from './services/auth.service';
 
 
 
@@ -37,7 +38,7 @@ import { MatButtonModule } from '@angular/material/button';
  
     
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -24,7 +24,14 @@ export class RegisterComponent implements OnInit {
   }
 
   userRegister() {
-    
+    const value = this.registerForm.getRawValue();
+    this.auth.userRegister(value).subscribe(
+      res => {
+        console.log(res)
+        alert("Thanks for registering " + res.username+ "you will now be directed to login")
+        this.router.navigate(['/login'])
+      })
+      this.registerForm.reset();
   }
 
 }

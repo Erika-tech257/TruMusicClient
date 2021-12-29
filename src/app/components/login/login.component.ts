@@ -23,7 +23,13 @@ export class LoginComponent implements OnInit {
   }
 
   userLogin() {
-    
+    const value = this.loginForm.getRawValue();
+    this.auth.userLogin(value).subscribe(
+      res => {
+        console.log(res);
+        alert("You are now logged in " + res.username)
+      })
+      this.loginForm.reset();
   }
 
 }
