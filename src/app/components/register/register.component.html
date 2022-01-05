@@ -1,5 +1,5 @@
 <h1>TruMusic</h1>
-<form [formGroup] = "registerForm" (ngSubmit) = "userRegister" class="form-control">
+<form [formGroup] = "registerForm" (ngSubmit) = "userRegister()" class="form-control">
   <h3>Please Register</h3>
 <div class = "email">
 <mat-form-field appearance="legacy">
@@ -31,5 +31,5 @@
     >
   </mat-form-field>
 </div>
-<button mat-raised-button color="primary" type="button">Submit</button>
+<button mat-raised-button color="primary" type="submit">Submit</button>
 </form>

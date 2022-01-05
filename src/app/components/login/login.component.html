@@ -1,5 +1,5 @@
 <h1>TruMusic</h1>
-<form [formGroup] = "loginForm" (ngSubmit) = "userLogin" class="form-control">
+<form [formGroup] = "loginForm" (ngSubmit) = "userLogin()" class="form-control">
   <h3>Please Login</h3>
 <div class="username">
   <mat-form-field appearance="legacy">
@@ -22,5 +22,5 @@
   </mat-form-field>
 </div>
 <a href="/register">Don't have an account? Click here to register</a>
-<button mat-raised-button color="primary" type="button">Submit</button>
+<button mat-raised-button color="primary" type="submit">Submit</button>
 </form>

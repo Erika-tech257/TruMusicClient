@@ -18,14 +18,15 @@ export class AuthService {
 
   //Pass in http interceptor for login pass in token
 
-  userLogin(loginUser: loginUser): Observable<loginUser> {
+  userLogin(loginUser: loginUser): 
+  Observable<loginUser> {
+    const user = loginUser.username
     return this.http.post<loginUser>(
       this.apiUrl + "login",
       JSON.stringify(loginUser),
       this.httpOptions
     )
     .pipe(retry(1), catchError(this.handleError));
-    
   }
 
 

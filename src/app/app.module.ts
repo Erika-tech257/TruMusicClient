@@ -19,6 +19,7 @@ import { AuthService } from './services/auth.service';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { AuthService } from './services/auth.service';
     MatButtonModule,
     MatMenuModule,
     MatIconModule
+  
  
     
   ],
