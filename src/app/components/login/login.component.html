@@ -1,5 +1,5 @@
 <h1>TruMusic</h1>
-<form [formGroup] = "loginForm" (ngSubmit) = "userLogin()" class="form-control">
+<form [formGroup] = "loginForm" (ngSubmit)="userLogin(username, password)" class="form-control">
   <h3>Please Login</h3>
 <div class="username">
   <mat-form-field appearance="legacy">

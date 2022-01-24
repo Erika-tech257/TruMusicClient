@@ -1,6 +1,8 @@
 export interface loginUser {
-    username: string;
-    password: string;
+  [x: string]: any;
+     username: string,
+    password: string,
+    token: string
 }
 
 export interface registerUser {
