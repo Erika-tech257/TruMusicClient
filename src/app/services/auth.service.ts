@@ -41,7 +41,7 @@ console.log(user)
     .set('password', user.password)
     .set('grant_type', user.password)
     console.log(params)
-    return this.http.post<any>(`http://localhost:8080/TruMusic/login + ?username=${user.username}&password=${user.password}&grant_type=${user.password}`, params, {observe: 'response'})
+    return this.http.post<any>('http://localhost:8080/TruMusic/login', params, this.httpOptions)
     .pipe(retry(1), catchError(this.handleError) ,map(response => response.body.value))
 }
 

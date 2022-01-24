@@ -63,6 +63,9 @@ export class LoginComponent implements OnInit {
        sessionStorage.setItem("accessToken", res.body.token);
         alert("You are now logged in ")
         this.router.navigate(['navbar'])
+        .catch(error => {
+          console.log(error)
+        })
       })
       this.loginForm.reset();
   }
