@@ -60,9 +60,10 @@ export class LoginComponent implements OnInit {
     this.auth.userLogin(value,username, password).subscribe(
       res => {
         console.log(res)
-       sessionStorage.setItem("accessToken", res.body.token);
+        return res
+      //  sessionStorage.setItem("accessToken", res.body?.token);
         alert("You are now logged in ")
-        this.router.navigate(['navbar'])
+        this.router.navigate([''])
         .catch(error => {
           console.log(error)
         })
