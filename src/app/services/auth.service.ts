@@ -27,11 +27,12 @@ export class AuthService {
 userLogin(loginUser: loginUser, username:string, password:string): Observable<HttpResponse<loginUser>>{
   username = username;
   password = password;
-
+  
 
   // const paramOptions = username ?  password ?
 
 const user = loginUser
+
 console.log(user)
   let params = new HttpParams()
     .set('username', user.username)
@@ -57,7 +58,7 @@ console.log(user)
   }
 
   loggedOut() {
-    sessionStorage.clear()
+    localStorage.clear()
     alert("You are logging out")
     this.router.navigate(['/'])
   }

@@ -8,12 +8,13 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
+  displayName = localStorage.getItem("name")
 
   constructor(private auth : AuthService) { }
 
   ngOnInit(): void {
 
-
   }
 
+ 
 }
