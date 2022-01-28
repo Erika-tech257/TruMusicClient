@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { registerUser,loginUser } from "src/app/interfaces/user";
 import { HttpClient, HttpErrorResponse, HttpHeaders, HttpParams, HttpResponse } from "@angular/common/http";
 import { Router } from "@angular/router";
-import { BehaviorSubject, catchError, map, Observable, pipe, retry, throwError } from "rxjs";
+import { catchError, Observable, retry, throwError } from "rxjs";
 
 
 
@@ -28,9 +28,6 @@ userLogin(loginUser: loginUser, username:string, password:string): Observable<Ht
   username = username;
   password = password;
   
-
-  // const paramOptions = username ?  password ?
-
 const user = loginUser
 
 console.log(user)
