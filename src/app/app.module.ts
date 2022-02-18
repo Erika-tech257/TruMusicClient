@@ -17,6 +17,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import { AuthService } from './services/auth.service';
 import { TokenInterceptorInterceptor } from './interceptor/token-interceptor.interceptor';
+import { SearchComponent } from './components/search/search.component';
 
 
 
@@ -26,7 +27,8 @@ import { TokenInterceptorInterceptor } from './interceptor/token-interceptor.int
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    NavbarComponent
+    NavbarComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

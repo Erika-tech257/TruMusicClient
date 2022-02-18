@@ -54,9 +54,8 @@ console.log(user)
     return throwError(() => error);
   }
 
-  loggedOut() {
+  loggedOut(){
     localStorage.clear()
-    alert("You are logging out")
     this.router.navigate(['/'])
   }
 
