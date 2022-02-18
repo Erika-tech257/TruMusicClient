@@ -18,6 +18,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { AuthService } from './services/auth.service';
 import { TokenInterceptorInterceptor } from './interceptor/token-interceptor.interceptor';
 import { SearchComponent } from './components/search/search.component';
+import { PlaylistComponent } from './components/playlist/playlist.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 
@@ -28,7 +30,9 @@ import { SearchComponent } from './components/search/search.component';
     LoginComponent,
     RegisterComponent,
     NavbarComponent,
-    SearchComponent
+    SearchComponent,
+    PlaylistComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
