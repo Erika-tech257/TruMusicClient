@@ -31,11 +31,12 @@ userLogin(loginUser: loginUser, username:string, password:string): Observable<Ht
 const user = loginUser
 
 console.log(user)
-  let params = new HttpParams()
-    .set('username', user.username)
-    .set('password', user.password)
-    console.log(params)
-    return this.http.post<loginUser>('http://localhost:8080/TruMusic/login', params, {observe: 'response'})
+  // let params = new HttpParams()
+  //   .set('username', user.username)
+  //   .set('password', user.password)
+  //   console.log(params)
+
+    return this.http.post<loginUser>('http://localhost:8080/TruMusic/login', loginUser, {observe: 'response'})
     .pipe(retry(1), catchError(this.handleError))
 }
 

@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
 
     username!: string
     password!: string
+ 
 
   constructor(private auth: AuthService, private formBuilder: FormBuilder, private router: Router,
     private route: ActivatedRoute) {}
@@ -31,10 +32,11 @@ export class LoginComponent implements OnInit {
   userLogin(username:string, password:string) {
     const value = this.loginForm.getRawValue();
     console.log(value);
-    this.auth.userLogin(value,username, password).subscribe(
+    this.auth.userLogin(value, username, password).subscribe(
       res => {
       console.log(res)
      localStorage.setItem("name", value.username)
+     localStorage.setItem("Bearer", <string>res.body?.jwtToken)
       })
         alert(`You are now logged in ${value.username}`)
         this.router.navigate(['navbar'])
