@@ -11,6 +11,7 @@
     >
   </mat-form-field>
 </div>
+<span style="color: red;" *ngIf="email && email.invalid && email.touched">Please enter a valid email</span>
 <div class="username">
   <mat-form-field appearance="legacy">
     <mat-label>Username</mat-label>
@@ -21,6 +22,7 @@
     >
   </mat-form-field>
 </div>
+<span style="color: red;" *ngIf="username && username.invalid && username.touched">Username minimum length must be atleast 5</span>
 <div class="password">
   <mat-form-field appearance="legacy">
     <mat-label>Password</mat-label>
@@ -31,5 +33,6 @@
     >
   </mat-form-field>
 </div>
-<button mat-raised-button color="primary" type="submit">Submit</button>
+<span style="color: red;" *ngIf="password && password.invalid && password.touched">Password minimum length must be atleast 8</span>
+<button mat-raised-button color="primary" type="submit" [disabled]="registerForm.invalid">Submit</button>
 </form>

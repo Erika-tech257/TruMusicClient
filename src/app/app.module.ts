@@ -20,6 +20,7 @@ import { TokenInterceptorInterceptor } from './interceptor/token-interceptor.int
 import { SearchComponent } from './components/search/search.component';
 import { PlaylistComponent } from './components/playlist/playlist.component';
 import { HomeComponent } from './components/home/home.component';
+import { BackButtonComponent } from './components/back-button/back-button.component';
 
 
 
@@ -32,7 +33,8 @@ import { HomeComponent } from './components/home/home.component';
     NavbarComponent,
     SearchComponent,
     PlaylistComponent,
-    HomeComponent
+    HomeComponent,
+    BackButtonComponent
   ],
   imports: [
     BrowserModule,
