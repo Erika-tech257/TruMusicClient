@@ -1,6 +1,6 @@
 export interface loginUser {
 //   [x: string]: any;
-     username: string,
+    username: string,
     password: string,
     jwtToken: string
 }

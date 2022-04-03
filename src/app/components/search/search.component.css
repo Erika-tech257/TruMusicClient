@@ -1,0 +1,23 @@
+form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    padding: 8px;
+    position: relative;
+    left: 10px;
+    border-radius: 5px 5px;  
+}
+
+button {
+    position: relative;
+    left: 18px;
+}
+
+.container {
+    position: relative;
+    top: 5px;
+    left: 15px;
+}

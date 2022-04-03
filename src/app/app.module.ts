@@ -13,17 +13,15 @@ import { MatInputModule} from '@angular/material/input'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button'; 
-import {MatMenuModule} from '@angular/material/menu';
-import {MatIconModule} from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatRadioModule} from '@angular/material/radio';
 import { AuthService } from './services/auth.service';
 import { TokenInterceptorInterceptor } from './interceptor/token-interceptor.interceptor';
 import { SearchComponent } from './components/search/search.component';
 import { PlaylistComponent } from './components/playlist/playlist.component';
 import { HomeComponent } from './components/home/home.component';
 import { BackButtonComponent } from './components/back-button/back-button.component';
-
-
-
 
 @NgModule({
   declarations: [
@@ -48,10 +46,9 @@ import { BackButtonComponent } from './components/back-button/back-button.compon
     MatSelectModule,
     MatButtonModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatRadioModule
   
- 
-    
   ],
   providers: [AuthService,
   {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorInterceptor, multi: true }],
